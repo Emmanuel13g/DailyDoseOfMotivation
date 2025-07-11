@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "50838442820",
+    "project_id": "motivationalapp-69d3d",
+    "storage_bucket": "motivationalapp-69d3d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50838442820:android:be8b81ec42c9f4bc3dbd11",
+        "android_client_info": {
+          "package_name": "com.egdcoding.dailydoseofmotivation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPRoYVWmFGYpbihd44qDg6qNjfb9iQu6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50838442820:android:4d9ac921bbe1199c3dbd11",
+        "android_client_info": {
+          "package_name": "com.example.motivationalapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPRoYVWmFGYpbihd44qDg6qNjfb9iQu6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

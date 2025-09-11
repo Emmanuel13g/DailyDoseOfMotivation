@@ -30,7 +30,7 @@ fun AddQuoteScreen(navController: NavController  ) {
     val viewModel: QuoteViewModel = viewModel()
     val context = LocalContext.current
 
-    BackgroundImage(R.drawable.ic_dark_add_quote_background)
+    BackgroundImage(R.drawable.ic_galaxy)
 
     Column(
         modifier = Modifier

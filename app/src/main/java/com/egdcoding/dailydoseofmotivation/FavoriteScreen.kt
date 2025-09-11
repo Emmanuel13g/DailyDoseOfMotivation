@@ -45,21 +45,23 @@ fun FavoritesScreen(viewModel: QuoteViewModel) {
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        BackgroundImage(R.drawable.ic_favorites_background)
+        BackgroundImage(R.drawable.night)
 
         if (favoriteQuotes.isEmpty()) {
             Text("No favorites yet.", color = Color.White)
         } else {
             LazyColumn(
                 verticalArrangement = Arrangement.spacedBy(8.dp),
-                modifier = Modifier.padding(16.dp),
+                modifier = Modifier.padding(horizontal = 8.dp, vertical = 0.dp),
             ) {
                 items(favoriteQuotes) { quote ->
                     Card(
                         modifier = Modifier.fillMaxWidth(),
-                        elevation = CardDefaults.cardElevation(4.dp),
+                        elevation = CardDefaults.outlinedCardElevation(0.dp),
                         shape = RoundedCornerShape(12.dp),
-                        colors = CardDefaults.cardColors(Color(0xFF3A3A49))
+                        colors = CardDefaults.cardColors(Color(0x360B0B44))
+                        //0x5B0F0F3D
+                        // 0x360B0B44
                     ) {
                         Row(
                             modifier = Modifier

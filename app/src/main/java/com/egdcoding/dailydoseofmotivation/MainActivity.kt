@@ -123,7 +123,7 @@ fun AppScreen(quote: String?) {
                     )
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = Color(0xFF2F3144),
+                    containerColor = Color(0xFF111D3A),
                     titleContentColor = Color.White
                 )
             )
@@ -215,7 +215,7 @@ fun MainRoute(
     Box(
         modifier = Modifier.fillMaxSize().background(Color.LightGray)
     ) {
-        BackgroundImage(R.drawable.ic_dark_home_background)
+        BackgroundImage(R.drawable.moon_tree2)
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.SpaceBetween,
@@ -284,7 +284,7 @@ fun StatusColor(){
 
     SideEffect {
         systemUiController.setStatusBarColor(
-            color = Color(0xFF2F3144), // Your chosen color
+            color = Color(0xFF111D3A), // Your chosen color  0xFF2F3144
             darkIcons = false // Change to true if you want light icons
         )
     }
@@ -296,7 +296,7 @@ fun BottomNavigationBar(navController: NavController) {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
 
-    NavigationBar(containerColor = Color(0xFF2D2A38)) {
+    NavigationBar(containerColor = Color(0xFF111D3A)) { // 0xFF2D2A38
         NavigationBarItem(
             selected = currentRoute == "main",
             onClick = { if (currentRoute != "main") navController.navigate("main") { launchSingleTop = true } },

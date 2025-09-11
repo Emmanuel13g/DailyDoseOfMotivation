@@ -14,9 +14,9 @@ android {
     defaultConfig {
         applicationId = "com.egdcoding.dailydoseofmotivation"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 5
-        versionName = "1.4"
+        targetSdk = 35
+        versionCode = 10
+        versionName = "2.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

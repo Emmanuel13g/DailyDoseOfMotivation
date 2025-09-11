@@ -56,7 +56,7 @@ fun MyQuotesScreen(viewModel: QuoteViewModel, navController: NavController) {
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        BackgroundImage(R.drawable.ic_dark_my_quotes_background2)
+        BackgroundImage(R.drawable.moon_mountain)
 
         if (userQuotes.isEmpty()) {
             Text("No quotes yet. Start writing your own!", color = Color.White)
@@ -68,9 +68,10 @@ fun MyQuotesScreen(viewModel: QuoteViewModel, navController: NavController) {
                 items(userQuotes) { quote ->
                     Card(
                         modifier = Modifier.fillMaxWidth(),
-                        elevation = CardDefaults.cardElevation(4.dp),
+                        elevation = CardDefaults.cardElevation(0.dp),
                         shape = RoundedCornerShape(12.dp),
-                        colors = CardDefaults.cardColors(containerColor = Color(0xFF3A3A49))
+                        colors = CardDefaults.cardColors(containerColor = Color(0x360B0B44))
+                        // 0x41000002
                     ) {
                         Column(
                             modifier = Modifier.fillMaxWidth().padding(16.dp)

@@ -122,7 +122,7 @@ fun CommunityScreen(viewModel: QuoteViewModel) {
             .background(Color.White)
     ) {
         // Background Image
-        BackgroundImage(R.drawable.ic_darkbackground)
+        BackgroundImage(R.drawable.desert)
 
         if (isLoading) {
             // Show a loading indicator

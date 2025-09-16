@@ -52,15 +52,16 @@ fun FavoritesScreen(viewModel: QuoteViewModel) {
         } else {
             LazyColumn(
                 verticalArrangement = Arrangement.spacedBy(8.dp),
-                modifier = Modifier.padding(horizontal = 8.dp, vertical = 0.dp),
+                modifier = Modifier.padding(8.dp)
             ) {
                 items(favoriteQuotes) { quote ->
                     Card(
                         modifier = Modifier.fillMaxWidth(),
                         elevation = CardDefaults.outlinedCardElevation(0.dp),
                         shape = RoundedCornerShape(12.dp),
-                        colors = CardDefaults.cardColors(Color(0x360B0B44))
+                        colors = CardDefaults.cardColors(Color(0x680B0B44))
                         //0x5B0F0F3D
+                        // 0x520B0B44
                         // 0x360B0B44
                     ) {
                         Row(
